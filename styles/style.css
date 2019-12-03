@@ -16,5 +16,11 @@ ul{
 }
 #black{
   background: black;
-  height: 1080px;
+  height: 80vh;
+}
+#psychogradient{
+  font-size: 6rem;
+  background: -webkit-linear-gradient(rgb(68, 149, 177), rgb(17, 20, 9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
