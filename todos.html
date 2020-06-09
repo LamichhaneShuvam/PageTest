@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TODO app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: burlywood;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.foot{
+    padding: 3px;
+    background-color: #333;
+    text-align: center;
+}
+/* table part */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 60%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <!-- <a class="active" href="#home">TODO</a> -->
+  <div class="topnav-right">
+    <a href="login.html">Logout</a>
+  </div>
+</div>
+<h1 style="text-align: center; text-decoration: underline;">Welcome username</h1>
+<div>
+    <table align="center">
+        <tr>
+          <th>TODO</th>
+          <th>INSERTED DATE</th>
+          <th>Status</th>
+          <th>Remove</th>
+        </tr>
+        <tr>
+            <td>Take the dog outside</td>
+            <td>.......</td>
+            <td><a style="color: green;">Completed</a></td>
+            <td><a href="#" style="color: red;">Delete</a></td>
+          </tr>
+        <tr>
+          <td>Bring vegitables from the shop</td>
+          <td>.........</td>
+          <td><a href="#">Done</a></td>
+          <td><a href="#" style="color: red;">Delete</a></td>
+        </tr>
+        <tr>
+          <td>Meeting at 5 pm</td>
+          <td>.........</td>
+          <td><a href="#">Done</a></td>
+          <td><a href="#" style="color: red;">Delete</a></td>
+        </tr>
+        <tr>
+          <td>Pressure medicine at 8pm</td>
+          <td>.........</td>
+          <td><a href="#">Done</a></td>
+          <td><a href="#" style="color: red;">Delete</a></td>
+        </tr>
+      </table>
+</div>
+<div style="text-align: center;">
+    <br><br>
+    <form action="">
+        <input type="text" name="todo" id="todo" style="width: 300px;" placeholder="TODO" required>
+        <input type="button" value="Insert">
+    </form>
+    <h3>When done is pressed its status changes to completed</h3>
+    <p>when inserted the inserted date will automatically come</p>
+</div>
+<div style="padding-bottom: 4.2%;"></div>
+<div class="foot">
+    <h3 style="color:#f2f2f2;">.......just a prototype......</h3>
+</div>
+
+</body>
+</html>
